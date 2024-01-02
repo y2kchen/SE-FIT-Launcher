@@ -1,0 +1,13 @@
+C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\bin\Debug\Launcher.exe.config
+C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\bin\Debug\Launcher.exe
+C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\bin\Debug\Launcher.pdb
+C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\bin\Debug\Launcher.xml
+C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\obj\Debug\test1.vbproj.AssemblyReference.cache
+C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\obj\Debug\test1.vbproj.SuggestedBindingRedirects.cache
+C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\obj\Debug\Launcher.Form1.resources
+C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\obj\Debug\Launcher.Resources.resources
+C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\obj\Debug\test1.vbproj.GenerateResource.cache
+C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\obj\Debug\test1.vbproj.CoreCompileInputs.cache
+C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\obj\Debug\Launcher.exe
+C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\obj\Debug\Launcher.xml
+C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\obj\Debug\Launcher.pdb
