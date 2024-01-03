@@ -1,0 +1,8 @@
+
+*.vsidx
+*.vsidx
+.vs/test1/v17/.suo
+test1/bin/Debug/Launcher.exe
+test1/bin/Debug/Launcher.pdb
+test1/Form1.resx
+.vs/test1/FileContentIndex/50e947c3-a84a-42a0-b279-65a4e1e3ca11.vsidx
