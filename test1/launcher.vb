@@ -7,14 +7,14 @@ Imports System.IO
 
 
 
-Public Class Form1
+Public Class launcher
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Form1_Activated(sender, e)
     End Sub
 
     Private Sub RichTextBox1_Enter(sender As Object, e As EventArgs) Handles RichTextBox1.Enter
-        
+
     End Sub
 
     Private Sub Form1_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
@@ -22,7 +22,7 @@ Public Class Form1
         Static Dim maxProcessorAffinity As Integer = 0
         Static Dim cores As Integer = 0
         Dim i, id, core64(64) As Integer
-        Button2.Enabled = True
+        BtnLaunch.Enabled = True
         Try
             If maxProcessorAffinity = 0 Then
                 'n += 1
@@ -63,7 +63,7 @@ Public Class Form1
                             RichTextBox1.AppendText(id.ToString + "  ")
                             core64(id) += 1
                         End If
-                        i = i * 2
+                        i *= 2
                         id += 1
                     End While
                     RichTextBox1.AppendText(vbNewLine)
@@ -81,22 +81,22 @@ Public Class Form1
             'RichTextBox1.AppendText("Target core # " + id.ToString + vbNewLine)
 
         Catch ex As Exception
-            Button2.Enabled = False
+            BtnLaunch.Enabled = False
             MessageBox.Show("Could not access process list.", "Error!")
         End Try
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub BtnRefresh_Click(sender As Object, e As EventArgs) Handles BtnRefresh.Click
         Form1_Activated(sender, e)
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub BtnLaunch_Click(sender As Object, e As EventArgs) Handles BtnLaunch.Click
         Dim a As String = ""
         Dim z, x As Integer
         z = 0
         x = NumericUpDown1.Value
         While x > 3
-            x = x - 4
+            x -= 4
             z += 1
         End While
         Select Case x
@@ -121,7 +121,7 @@ Public Class Form1
             Return
         End If
         Try
-            Dim gSEProcess As Process = New Process
+            Dim gSEProcess As New Process()
             With gSEProcess.StartInfo
                 .FileName = "cmd.exe"
                 '.FileName = "C:\Windows\System32\cmd.exe"
