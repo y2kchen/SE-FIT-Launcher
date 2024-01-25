@@ -29,12 +29,14 @@ Partial Class launcher
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BtnLaunch = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.TbFileName = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(12, 67)
+        Me.RichTextBox1.Location = New System.Drawing.Point(12, 86)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(346, 217)
         Me.RichTextBox1.TabIndex = 0
@@ -42,16 +44,16 @@ Partial Class launcher
         '
         'BtnRefresh
         '
-        Me.BtnRefresh.Location = New System.Drawing.Point(12, 7)
+        Me.BtnRefresh.Location = New System.Drawing.Point(56, 48)
         Me.BtnRefresh.Name = "BtnRefresh"
-        Me.BtnRefresh.Size = New System.Drawing.Size(75, 23)
+        Me.BtnRefresh.Size = New System.Drawing.Size(54, 23)
         Me.BtnRefresh.TabIndex = 1
         Me.BtnRefresh.Text = "Refresh"
         Me.BtnRefresh.UseVisualStyleBackColor = True
         '
         'NumericUpDown1
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(214, 33)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(290, 50)
         Me.NumericUpDown1.Maximum = New Decimal(New Integer() {63, 0, 0, 0})
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(52, 20)
@@ -60,7 +62,7 @@ Partial Class launcher
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(105, 35)
+        Me.Label1.Location = New System.Drawing.Point(171, 52)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 13)
         Me.Label1.TabIndex = 3
@@ -68,26 +70,45 @@ Partial Class launcher
         '
         'BtnLaunch
         '
-        Me.BtnLaunch.Location = New System.Drawing.Point(108, 7)
+        Me.BtnLaunch.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.BtnLaunch.Location = New System.Drawing.Point(196, 12)
         Me.BtnLaunch.Name = "BtnLaunch"
-        Me.BtnLaunch.Size = New System.Drawing.Size(158, 23)
+        Me.BtnLaunch.Size = New System.Drawing.Size(162, 23)
         Me.BtnLaunch.TabIndex = 4
         Me.BtnLaunch.Text = "Launch SE-FIT"
-        Me.BtnLaunch.UseVisualStyleBackColor = True
+        Me.BtnLaunch.UseVisualStyleBackColor = False
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(174, 35)
+        Me.Label2.Location = New System.Drawing.Point(250, 52)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(0, 13)
         Me.Label2.TabIndex = 5
         '
-        'Form1
+        'TbFileName
+        '
+        Me.TbFileName.Location = New System.Drawing.Point(71, 9)
+        Me.TbFileName.Name = "TbFileName"
+        Me.TbFileName.Size = New System.Drawing.Size(100, 20)
+        Me.TbFileName.TabIndex = 6
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(26, 12)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(35, 13)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Name"
+        '
+        'launcher
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(370, 307)
+        Me.ClientSize = New System.Drawing.Size(370, 333)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TbFileName)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.BtnLaunch)
         Me.Controls.Add(Me.Label1)
@@ -95,7 +116,8 @@ Partial Class launcher
         Me.Controls.Add(Me.BtnRefresh)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form1"
+        Me.MaximizeBox = False
+        Me.Name = "launcher"
         Me.Text = "SE-FIT Launcher"
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -108,5 +130,6 @@ Partial Class launcher
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents BtnLaunch As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
-
+    Friend WithEvents TbFileName As TextBox
+    Friend WithEvents Label3 As Label
 End Class

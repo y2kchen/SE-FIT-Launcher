@@ -19,3 +19,7 @@ test1/Form1.Designer.vb
 *.cache
 test1/obj/Debug/test1.vbproj.FileListAbsolute.txt
 test1/obj/Debug/test1.vbproj.GenerateResource.cache
+test1/obj/Debug/test1.vbproj.GenerateResource.cache
+test1/obj/Debug/Launcher.pdb
+test1/bin/Debug/Launcher.pdb
+.vs/test1/v17/.suo

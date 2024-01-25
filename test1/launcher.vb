@@ -93,6 +93,7 @@ Public Class launcher
     Private Sub BtnLaunch_Click(sender As Object, e As EventArgs) Handles BtnLaunch.Click
         Dim a As String = ""
         Dim z, x As Integer
+        Dim executable As String = TbFileName.Text + ".exe"
         z = 0
         x = NumericUpDown1.Value
         While x > 3
@@ -116,8 +117,8 @@ Public Class launcher
         'Me.Text = a
         'System.Diagnostics.Process.Start()
         '"C:\Windows\System32\cmd.exe /C START /high /affinity 1 SE-FIT.exe"
-        If Not File.Exists("SE-FIT.exe") Then
-            MessageBox.Show("Could not find SE-FIT.exe in the current directory.", "Error!")
+        If Not File.Exists(executable) Then
+            MessageBox.Show("Could not find " + executable + " in the current directory.", "Error!")
             Return
         End If
         Try
@@ -126,7 +127,7 @@ Public Class launcher
                 .FileName = "cmd.exe"
                 '.FileName = "C:\Windows\System32\cmd.exe"
                 '.Arguments = "/C START /high /affinity " + a + " SE-FIT.exe"
-                .Arguments = "/C START /affinity " + a + " SE-FIT.exe"
+                .Arguments = "/C START /affinity " + a + " " + executable
                 .UseShellExecute = False
                 .CreateNoWindow = True
                 '.RedirectStandardOutput = True
@@ -147,8 +148,12 @@ Public Class launcher
             'Start evolver.exe in the background
             gSEProcess.Start()
         Catch ex As Exception
-            MessageBox.Show("Could not find SE-FIT.exe in the current directory.", "Error!")
+            MessageBox.Show("Could not find " + executable + " in the current directory.", "Error!")
         End Try
 
+    End Sub
+
+    Private Sub TbFileName_TextChanged(sender As Object, e As EventArgs) Handles TbFileName.TextChanged
+        BtnLaunch.Text = "Launch " + TbFileName.Text
     End Sub
 End Class
