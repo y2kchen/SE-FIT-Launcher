@@ -12,7 +12,6 @@ C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\obj\Debug\Launcher.exe
 C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\obj\Debug\Launcher.xml
 C:\Users\YongkangChen\Desktop\SE-FIT launcher\test1\obj\Debug\Launcher.pdb
 C:\SE-FIT-Launcher\test1\obj\Debug\test1.vbproj.AssemblyReference.cache
-C:\SE-FIT-Launcher\test1\obj\Debug\test1.vbproj.SuggestedBindingRedirects.cache
 C:\SE-FIT-Launcher\test1\obj\Debug\Launcher.launcher.resources
 C:\SE-FIT-Launcher\test1\obj\Debug\Launcher.Resources.resources
 C:\SE-FIT-Launcher\test1\obj\Debug\test1.vbproj.GenerateResource.cache

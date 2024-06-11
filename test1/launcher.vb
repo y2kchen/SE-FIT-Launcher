@@ -2,11 +2,6 @@
 Imports System.Diagnostics
 Imports System.ComponentModel
 Imports System.IO
-
-
-
-
-
 Public Class launcher
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -52,10 +47,12 @@ Public Class launcher
             For id = 0 To cores - 1
                 core64(id) = 0
             Next
-            Dim localByName As Process() = Process.GetProcessesByName("SE-FIT")
+            'Dim localByName As Process() = Process.GetProcessesByName("SE-FIT")
+            Dim localByName As Process() = Process.GetProcesses().Where(Function(p) p.ProcessName.StartsWith("SE-FIT")).ToArray()
+
             If localByName.Length > 0 Then
                 For Each p As Process In localByName
-                    RichTextBox1.AppendText("SE-FIT process " + p.Id.ToString + ", affinity: " + p.ProcessorAffinity.ToString() + ", core: ")
+                    RichTextBox1.AppendText(p.ProcessName + " process " + p.Id.ToString + ", affinity: " + p.ProcessorAffinity.ToString() + ", core: ")
                     i = 1
                     id = 0
                     While id < cores

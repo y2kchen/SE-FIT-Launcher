@@ -23,3 +23,7 @@ test1/obj/Debug/test1.vbproj.GenerateResource.cache
 test1/obj/Debug/Launcher.pdb
 test1/bin/Debug/Launcher.pdb
 .vs/test1/v17/.suo
+/.vs
+/test1/obj/Debug
+/test1/obj
+/test1/bin/Debug
